@@ -4,9 +4,8 @@
 
   <meta charset="UTF-8" />
   <title>Pengeluaran Harian</title>
-  <link rel="icon" type="image/png" href="D:\pengeluaranharian\favicon.png">
-
-  <link rel="manifest" href="D:\pengeluaranharian\manifest.json">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="manifest" href="manifest.json">
 
 
 
@@ -522,11 +521,6 @@ ${messageLines.join('\n\n')}
       URL.revokeObjectURL(url);
     };
 
-    const backupToGoogleSheet = () => {
-      if (!expenses.length) {
-        showFeedback('Belum ada data untuk dibackup.', true);
-        return;
-      }
 
       showOverlay();
       fetch('https://script.google.com/macros/s/AKfycbxLrmczoCfcsiFi9GBhFOBAxoo7KhMCcJ05jA7JE307qgEGWPry7Ezu2f2r5RVVeYTT6w/exec', {
